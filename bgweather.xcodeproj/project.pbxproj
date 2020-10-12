@@ -21,6 +21,8 @@
 		60E87DFD2533A6AF00F7A80B /* LocationPersistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E87DFC2533A6AF00F7A80B /* LocationPersistance.swift */; };
 		60E87DFF25341AB500F7A80B /* SavedLocationsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E87DFE25341AB500F7A80B /* SavedLocationsTVC.swift */; };
 		60E87E012534224900F7A80B /* MasterDetailSVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E87E002534224900F7A80B /* MasterDetailSVC.swift */; };
+		60E87E032534312900F7A80B /* HelpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E87E022534312900F7A80B /* HelpVC.swift */; };
+		60E87E062534337800F7A80B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E87E052534337800F7A80B /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		60E87DFC2533A6AF00F7A80B /* LocationPersistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPersistance.swift; sourceTree = "<group>"; };
 		60E87DFE25341AB500F7A80B /* SavedLocationsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedLocationsTVC.swift; sourceTree = "<group>"; };
 		60E87E002534224900F7A80B /* MasterDetailSVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterDetailSVC.swift; sourceTree = "<group>"; };
+		60E87E022534312900F7A80B /* HelpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpVC.swift; sourceTree = "<group>"; };
+		60E87E052534337800F7A80B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60E87E062534337800F7A80B /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 				60E87DD12533692600F7A80B /* bgweather */,
 				60E87DE82533692A00F7A80B /* bgweatherTests */,
 				60E87DD02533692600F7A80B /* Products */,
+				60E87E042534337800F7A80B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +113,7 @@
 				60E87DFE25341AB500F7A80B /* SavedLocationsTVC.swift */,
 				60E87DFC2533A6AF00F7A80B /* LocationPersistance.swift */,
 				60E87E002534224900F7A80B /* MasterDetailSVC.swift */,
+				60E87E022534312900F7A80B /* HelpVC.swift */,
 			);
 			path = bgweather;
 			sourceTree = "<group>";
@@ -118,6 +125,14 @@
 				60E87DEB2533692A00F7A80B /* Info.plist */,
 			);
 			path = bgweatherTests;
+			sourceTree = "<group>";
+		};
+		60E87E042534337800F7A80B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60E87E052534337800F7A80B /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60E87E032534312900F7A80B /* HelpVC.swift in Sources */,
 				60E87DF9253374E000F7A80B /* Entities.swift in Sources */,
 				60E87DF72533707800F7A80B /* Codable+SerializationDeserialization.swift in Sources */,
 				60E87DF525336D3000F7A80B /* Repositoy.swift in Sources */,

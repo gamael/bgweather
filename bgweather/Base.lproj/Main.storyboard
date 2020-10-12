@@ -101,7 +101,42 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2478" y="1025"/>
+            <point key="canvasLocation" x="2001" y="1227"/>
+        </scene>
+        <!--Help-->
+        <scene sceneID="38S-Zd-YWe">
+            <objects>
+                <viewController id="MHJ-x0-hJR" customClass="HelpVC" customModule="bgweather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kTl-7K-VV1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XXz-Lz-AeR">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="XXz-Lz-AeR" firstAttribute="top" secondItem="bxN-fj-ja8" secondAttribute="top" id="9c0-IQ-uAl"/>
+                            <constraint firstItem="bxN-fj-ja8" firstAttribute="bottom" secondItem="XXz-Lz-AeR" secondAttribute="bottom" id="gjt-xK-5eo"/>
+                            <constraint firstItem="XXz-Lz-AeR" firstAttribute="leading" secondItem="bxN-fj-ja8" secondAttribute="leading" id="tD1-tl-jSP"/>
+                            <constraint firstItem="bxN-fj-ja8" firstAttribute="trailing" secondItem="XXz-Lz-AeR" secondAttribute="trailing" id="y93-jM-bLE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bxN-fj-ja8"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Help" image="hand.thumbsup" catalog="system" id="wkd-ML-itw"/>
+                    <connections>
+                        <outlet property="webView" destination="XXz-Lz-AeR" id="HR3-Ph-TuI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R4g-W0-V1M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="975" y="937"/>
         </scene>
         <!--Search-->
         <scene sceneID="uzQ-lb-Kcn">
@@ -242,6 +277,7 @@
                     <connections>
                         <segue destination="H43-4M-mIC" kind="relationship" relationship="viewControllers" id="Mjq-3S-KOi"/>
                         <segue destination="dKu-Lk-oAd" kind="relationship" relationship="viewControllers" id="Y1M-8l-PCq"/>
+                        <segue destination="MHJ-x0-hJR" kind="relationship" relationship="viewControllers" id="EAl-46-Kk2"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jjg-X5-mCj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -250,6 +286,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="hand.thumbsup" catalog="system" width="128" height="128"/>
         <image name="list.bullet" catalog="system" width="128" height="88"/>
         <image name="map" catalog="system" width="128" height="113"/>
     </resources>
