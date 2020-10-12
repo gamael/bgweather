@@ -129,7 +129,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OL8-ep-TU1"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Search" image="map" catalog="system" id="WWE-Gv-RD2"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="map" catalog="system" landscapeImage="map" id="WWE-Gv-RD2"/>
                     <connections>
                         <outlet property="longPressGesture" destination="LWv-jn-s5x" id="W4C-Qh-qkO"/>
                         <outlet property="mapView" destination="sR9-PA-kMt" id="bXx-HL-8CD"/>
@@ -154,7 +154,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="RLT-mM-f9c"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Locations" landscapeImage="list.bullet" catalog="system" id="pih-IQ-Wp7"/>
+                    <tabBarItem key="tabBarItem" title="Locations" image="list.bullet" catalog="system" landscapeImage="list.bullet" id="pih-IQ-Wp7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mQx-Mg-ZUf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

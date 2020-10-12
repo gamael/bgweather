@@ -14,8 +14,6 @@ class MapVC: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet var longPressGesture: UILongPressGestureRecognizer!
     
-    var listCoordinates = [CLLocationCoordinate2D]()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,7 +32,7 @@ class MapVC: UIViewController {
         let myCoordinate: CLLocationCoordinate2D = mapView.convert(location, toCoordinateFrom: mapView)
         
         // Add to list of coordinates
-        listCoordinates.append(myCoordinate)
+        LocationsPersitance.shared.locations.append(myCoordinate)
         
         // Generate pins.
         let myPin: MKPointAnnotation = MKPointAnnotation()
