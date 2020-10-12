@@ -19,6 +19,8 @@
 		60E87DF9253374E000F7A80B /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E87DF8253374E000F7A80B /* Entities.swift */; };
 		60E87DFB25337E8600F7A80B /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E87DFA25337E8600F7A80B /* MapVC.swift */; };
 		60E87DFD2533A6AF00F7A80B /* LocationPersistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E87DFC2533A6AF00F7A80B /* LocationPersistance.swift */; };
+		60E87DFF25341AB500F7A80B /* SavedLocationsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E87DFE25341AB500F7A80B /* SavedLocationsTVC.swift */; };
+		60E87E012534224900F7A80B /* MasterDetailSVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E87E002534224900F7A80B /* MasterDetailSVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		60E87DF8253374E000F7A80B /* Entities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entities.swift; sourceTree = "<group>"; };
 		60E87DFA25337E8600F7A80B /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		60E87DFC2533A6AF00F7A80B /* LocationPersistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPersistance.swift; sourceTree = "<group>"; };
+		60E87DFE25341AB500F7A80B /* SavedLocationsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedLocationsTVC.swift; sourceTree = "<group>"; };
+		60E87E002534224900F7A80B /* MasterDetailSVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterDetailSVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +104,9 @@
 				60E87DF62533707800F7A80B /* Codable+SerializationDeserialization.swift */,
 				60E87DF8253374E000F7A80B /* Entities.swift */,
 				60E87DFA25337E8600F7A80B /* MapVC.swift */,
+				60E87DFE25341AB500F7A80B /* SavedLocationsTVC.swift */,
 				60E87DFC2533A6AF00F7A80B /* LocationPersistance.swift */,
+				60E87E002534224900F7A80B /* MasterDetailSVC.swift */,
 			);
 			path = bgweather;
 			sourceTree = "<group>";
@@ -218,11 +224,13 @@
 				60E87DF9253374E000F7A80B /* Entities.swift in Sources */,
 				60E87DF72533707800F7A80B /* Codable+SerializationDeserialization.swift in Sources */,
 				60E87DF525336D3000F7A80B /* Repositoy.swift in Sources */,
+				60E87DFF25341AB500F7A80B /* SavedLocationsTVC.swift in Sources */,
 				60E87DD72533692600F7A80B /* ViewController.swift in Sources */,
 				60E87DFB25337E8600F7A80B /* MapVC.swift in Sources */,
 				60E87DD32533692600F7A80B /* AppDelegate.swift in Sources */,
 				60E87DFD2533A6AF00F7A80B /* LocationPersistance.swift in Sources */,
 				60E87DD52533692600F7A80B /* SceneDelegate.swift in Sources */,
+				60E87E012534224900F7A80B /* MasterDetailSVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
