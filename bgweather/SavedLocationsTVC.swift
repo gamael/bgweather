@@ -41,12 +41,16 @@ class SavedLocationsTVC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
-        cell.textLabel?.text = "lat: \(LocationsPersitance.shared.locations[indexPath.row].latitude) | lon: \(LocationsPersitance.shared.locations[indexPath.row].longitude)"
+        let lat = String(format: "%.2f", LocationsPersitance.shared.locations[indexPath.row].latitude)
+        let lon = String(format: "%.2f", LocationsPersitance.shared.locations[indexPath.row].longitude)
+        
+        cell.textLabel?.text = "lat: \(lat) | lon: \(lon)"
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let detailVC = splitViewController?.viewControllers.last as? WeatherVC {
+            detailVC.repository = RepositoryImp()
             detailVC.location = LocationsPersitance.shared.locations[indexPath.row]
         }
     }
