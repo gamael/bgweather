@@ -11,6 +11,7 @@ import Foundation
 struct Weather: Codable {
     var weather: [CurrentWeather]
     var main: Main
+    var wind: Wind
 }
 
 struct CurrentWeather: Codable {
@@ -29,3 +30,10 @@ struct Main: Codable {
     var pressure: Float
     var humidity: Float
 }
+
+struct Wind: Codable {
+    var speed: Float
+    var deg: Float
+}
+
+
