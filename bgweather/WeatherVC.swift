@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  WeatherVC.swift
 //  bgweather
 //
 //  Created by Alejandro Agudelo on 11/10/20.
@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import MapKit
 
-class ViewController: UIViewController {
+class WeatherVC: UIViewController {
+    
+    var location: CLLocationCoordinate2D = CLLocationCoordinate2D()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
 
